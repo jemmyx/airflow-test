@@ -35,3 +35,12 @@ airflow scheduler
 ```
 
 
+Docker
+
+```
+docker build -t airflow-fm1 .
+```
+
+```
+docker run -d -p 8080:8080   -v /C:/Users/meyer/Documents/toSharedDrive/ephemeral/dev/python/airflow-docker:/opt/airflow/dags  -e AIRFLOW_UID=$(id -u)     -e AIRFLOW_GID=0     -e _AIRFLOW_DB_UPGRADE=true     -e _AIRFLOW_WWW_USER_CREATE=true     -e _AIRFLOW_WWW_USER_USERNAME=admin     -e _AIRFLOW_WWW_USER_PASSWORD=admin     --name airflow airflow-fm1 webserver
+```
