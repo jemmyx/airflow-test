@@ -10,6 +10,9 @@ ENV _AIRFLOW_WWW_USER_CREATE=true
 ENV _AIRFLOW_WWW_USER_USERNAME=admin
 ENV _AIRFLOW_WWW_USER_PASSWORD=admin
 
+# for info
+VOLUME ["/opt/airflow/dags"]
+
 # web interface
 EXPOSE 8080
 
