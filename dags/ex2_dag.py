@@ -16,7 +16,7 @@ default_args = {
 with DAG('example_dag2',
          default_args=default_args,
          description='Exemple simple de DAG #2',
-         schedule_interval='0 12 * * *', # Once a day at noon
+         schedule_interval='*/2 * * * *', # Once a day every 2 min
          catchup=False) as dag:
     
     # DAG Tasks / Operators
