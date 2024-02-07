@@ -1,4 +1,5 @@
-![image](https://github.com/jemmyx/airflow-test/assets/595853/56257891-33ee-42db-abe4-7aa73302d08a)
+![image](https://github.com/jemmyx/airflow-test/assets/595853/7251151a-a69d-4583-869b-aef6b13394b9)
+
 
 
 # Config Python locale
