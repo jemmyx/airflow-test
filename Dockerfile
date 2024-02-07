@@ -12,17 +12,18 @@ ENV _AIRFLOW_WWW_USER_CREATE=true
 ENV _AIRFLOW_WWW_USER_USERNAME=admin
 ENV _AIRFLOW_WWW_USER_PASSWORD=admin
 
-USER root
+# installing pdfplumber not working, run installation inside the container for now...
+# USER root
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-        poppler-utils \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update \
+#     && apt-get install -y --no-install-recommends \
+#         poppler-utils \
+#     && apt-get clean \
+#     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install pdfplumber
+# RUN pip install pdfplumber
 
-USER airflow
+# USER airflow
 
 # for info
 VOLUME ["/opt/airflow/dags"]
